@@ -1,0 +1,79 @@
+:root {
+  --dark: #171629;
+  --light: #959899;
+  --font: #03acb8;
+  --orange: #f7bc70;
+  --white: #c9c6c6;
+  --blue: #221f3d;
+  --background: #141327;
+}
+#logo {
+  position: relative;
+}
+body {
+  box-sizing: border-box;
+  background-color: var(--dark);
+}
+a {
+  text-decoration: none;
+  color: var(--font) !important;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.background-navbar {
+  background-color: var(--dark) !important;
+}
+.font {
+  color: var(--font);
+}
+.light-font {
+  color: var(--light);
+}
+.orange-font {
+  color: var(--orange);
+}
+.hero {
+  background-color: var(--dark);
+  height: 100vh;
+  padding: auto;
+}
+.row-hero {
+  height: 100%;
+}
+.about-me {
+  background-color: var(--background);
+}
+
+#projects {
+  background-color: var(--dark);
+  margin: 50px auto 200px;
+}
+.contact {
+  background-color: var(--background);
+  color: var(--white);
+}
+.contact input,
+.contact textarea {
+  background-color: var(--blue);
+  border: 0;
+}
+.btn-submit {
+  background-color: var(--blue);
+  color: var(--light);
+  border: var(--light);
+  width: 100%;
+}
+.btn-submit:hover {
+  background-color: var(--font);
+}
+.card {
+  background-color: var(--blue);
+  color: var(--white);
+}
+.card-group {
+  width: 70%;
+}
