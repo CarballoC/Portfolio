@@ -41,10 +41,10 @@
             </li>
             <li class="nav-item">
               <a class="nav-link nav-font" href="#contact-form">Contact</a>
-            </li>           
+            </li>
             <li class="nav-item">
               <a class="nav-link nav-font" href="/Resume.pdf">Resume</a>
-            </li>           
+            </li>
           </ul>
         </div>
       </div>
@@ -56,13 +56,18 @@
           <h1 class="mt-4">Yoandris Carballo,</h1>
           <h1 class="mb-4">Front End Developer</h1>
           <a href="#projects">
-            <button type="button" class="btn btn-outline-secondary my-4">View Projects</button></a
+            <button type="button" class="btn btn-outline-secondary my-4">
+              View Projects
+            </button></a
           >
         </div>
-        <div class="text-center"><a href="#about-me"><h6>Scroll Down</h6><i class="fas fa-chevron-circle-down fa-1x"></i></a></div>
-        
+        <div class="text-center">
+          <a href="#about-me"
+            ><h6>Scroll Down</h6>
+            <i class="fas fa-chevron-circle-down fa-1x"></i
+          ></a>
+        </div>
       </div>
-      
     </div>
     <div class="container font about-me p-5" id="about-me">
       <div class="row justify-content-center align-items-center">
@@ -72,9 +77,10 @@
         <div class="col-md-6 mx-auto p-3">
           <h2 class="light-font">About me</h2>
           <p>
-            I'm Yoandris Carballo self-taught Front End Dev, I discovered coding in 2020. I've
-            become truly passionate about technology. Coding is what I enjoy most and I can't wait to have the opportunity to work with a
-            team to improve my skills. 
+            I'm Yoandris Carballo self-taught Front End Dev, I discovered coding
+            in 2020. I've become truly passionate about technology. Coding is
+            what I enjoy most and I can't wait to have the opportunity to work
+            with a team to improve my skills.
           </p>
           <h2 class="light-font">Technologies I've worked with</h2>
           <ul>
@@ -90,7 +96,7 @@
     </div>
     <div class="container p-3" id="projects">
       <div class="row justify-content-center align-items-center">
-        <h1 class="light-font text-center p-5">What I've built</h1> 
+        <h1 class="light-font text-center p-5">What I've built</h1>
         <div class="card-group">
           <div class="col-sm-4 card text-start m-1 p-3">
             <h5 class="card-title light-font">Truckerbud.com</h5>
@@ -118,11 +124,8 @@
           </div>
           <div class="col-sm-4 card text-start m-1 p-3">
             <h5 class="card-title light-font">Know The Weather</h5>
-            <p class="card-text font">
-              React weather app.             
-            </p>
-            <p class="card-text font">                           
-            </p>
+            <p class="card-text font">React weather app.</p>
+            <p class="card-text font"></p>
             <ul class="light-font">
               <li>HTML</li>
               <li>CSS</li>
@@ -130,27 +133,36 @@
               <li>React</li>
             </ul>
             <div class="card-body">
-              <a href="https://carballoc.github.io/React-weather-app/" target="_blank"
+              <a
+                href="https://carballoc.github.io/React-weather-app/"
+                target="_blank"
                 ><i class="fas fa-external-link-alt"></i
               ></a>
-              <a href="https://github.com/CarballoC/React-weather-app" target="_blank" class="card-link"
+              <a
+                href="https://github.com/CarballoC/React-weather-app"
+                target="_blank"
+                class="card-link"
                 ><i class="fab fa-github p-2"></i
               ></a>
             </div>
           </div>
-        </div>      
-        
+        </div>
       </div>
     </div>
     <div class="container contact mb-3 p-5" id="contact-form">
       <div class="row justify-content-center align-items-center">
         <div class="col-md-4">
+          <form action="POST" data-netlify="true">
             <div class="mb-3">
               <h1 class="py-3 light-font">Get in Touch</h1>
-              <p class="font py-3">I'm currently looking for opportunities. There is not small opportunity for me. Get in touch even if you just want to know more about me.</p>
-              
+              <p class="font py-3">
+                I'm currently looking for opportunities. There is not small
+                opportunity for me. Get in touch even if you just want to know
+                more about me.
+              </p>
+
               <input
-                type="email"
+                type="name"
                 class="form-control"
                 id="exampleFormControlInput1"
                 placeholder="Name"
@@ -158,6 +170,7 @@
             </div>
             <div class="mb-3">
               <input
+                name="email"
                 type="email"
                 class="form-control"
                 id="exampleFormControlInput1"
@@ -165,15 +178,15 @@
               />
             </div>
             <div class="mb-3">
-              
               <textarea
+                name="message"
                 class="form-control"
                 id="exampleFormControlTextarea1"
                 rows="3"
                 placeholder="Message"
               ></textarea>
             </div>
-            <div class="btn btn-submit">Submit</div>
+            <button type="submit" class="btn btn-submit">Send</button>
           </form>
         </div>
       </div>
@@ -181,10 +194,16 @@
     <div class="container">
       <div class="row justify-content-center align-items-center">
         <div class="col-sm-2 p-2 text-center">
-          <a href="https://github.com/CarballoC" target="_blank"><i class="fab fa-github mx-5"></i></a></div>
-          <div class="col-sm-2 p-2 text-center">
-          <a href="https://www.instagram.com/yoac2021/" target="_blank"><i class="fab fa-instagram mx-5"></i></a></div>
-          <div class="col-sm-2 p-2 text-center">
+          <a href="https://github.com/CarballoC" target="_blank"
+            ><i class="fab fa-github mx-5"></i
+          ></a>
+        </div>
+        <div class="col-sm-2 p-2 text-center">
+          <a href="https://www.instagram.com/yoac2021/" target="_blank"
+            ><i class="fab fa-instagram mx-5"></i
+          ></a>
+        </div>
+        <div class="col-sm-2 p-2 text-center">
           <a href="#"><i class="fas fa-arrow-circle-up mx-5"></i></a>
         </div>
       </div>
