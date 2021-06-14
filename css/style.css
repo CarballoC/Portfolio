@@ -80,9 +80,6 @@ ul {
 span {
   /* display: block; */
   transition: ease;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 500;
-}
-.display-none {
-  font-size: 40px;
 }
