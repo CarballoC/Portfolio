@@ -77,3 +77,12 @@ ul {
 .card-group {
   width: 70%;
 }
+span {
+  /* display: block; */
+  transition: ease;
+  font-size: 40px;
+  font-weight: 500;
+}
+.display-none {
+  font-size: 40px;
+}
