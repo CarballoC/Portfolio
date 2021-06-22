@@ -1,3 +1,4 @@
+//TypeWriter on Hero Section
 class typeWriter {
   constructor(txtElement, words, wait = 2000) {
     this.txtElement = txtElement;
@@ -39,3 +40,14 @@ function init() {
   const wait = txtElement.getAttribute("data-wait");
   new typeWriter(txtElement, words, wait);
 }
+
+//
+function showAboutMeText() {
+  const aboutMeText = document.querySelector(".about-me-text");
+  const aboutMeTextPosition = aboutMeText.getBoundingClientRect().top;
+  const screenPosition = window.innerHeight / 2;
+  if (aboutMeTextPosition < screenPosition) {
+    aboutMeText.classList.add("about-me-transition");
+  }
+}
+window.addEventListener("scroll", showAboutMeText);

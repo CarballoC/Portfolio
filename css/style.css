@@ -47,11 +47,38 @@ ul {
 .about-me {
   background-color: var(--background);
 }
+.about-me-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s all ease-in-out;
+}
+.about-me-transition {
+  opacity: 1;
+  transform: translateY(0px);
+}
 
 #projects {
   background-color: var(--dark);
   margin: 50px auto 200px;
 }
+.card {
+  transition: 0.3s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-7px);
+}
+#projects a:hover {
+  color: var(--orange) !important;
+}
+i {
+  font-size: 20px;
+}
+i:hover {
+  transform: scaleY(0.7);
+  transition: 0.4s ease;
+  color: var(--orange);
+}
+
 .contact {
   background-color: var(--background);
   color: var(--white);
