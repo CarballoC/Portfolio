@@ -1,11 +1,10 @@
 :root {
-  --dark: #171629;
+  --dark: #010107;
   --light: #959899;
-  --font: #03acb8;
+  --font: #8c898d;
   --orange: #f7bc70;
   --white: #c9c6c6;
-  --blue: #221f3d;
-  --background: #141327;
+  --background: #0a090e;
 }
 #logo {
   position: relative;
@@ -46,6 +45,7 @@ ul {
 }
 .about-me {
   background-color: var(--background);
+  width: 50%;
 }
 .about-me-text {
   opacity: 0;
@@ -61,9 +61,13 @@ ul {
   background-color: var(--dark);
   margin: 50px auto 200px;
 }
+.card-group {
+  padding: 0 !important;
+}
 .card {
   transition: 0.3s ease-in-out;
 }
+
 .card:hover {
   transform: translateY(-7px);
 }
@@ -78,18 +82,20 @@ i:hover {
   transition: 0.4s ease;
   color: var(--orange);
 }
-
 .contact {
   background-color: var(--background);
   color: var(--white);
+  width: 50%;
 }
+
 .contact input,
 .contact textarea {
-  background-color: var(--blue);
+  background-color: var(--dark);
   border: 0;
+  width: 100%;
 }
 .btn-submit {
-  background-color: var(--blue);
+  background-color: var(--dark);
   color: var(--light);
   border: var(--light);
   width: 100%;
@@ -98,7 +104,7 @@ i:hover {
   background-color: var(--font);
 }
 .card {
-  background-color: var(--blue);
+  background-color: var(--background);
   color: var(--white);
 }
 .card-group {
@@ -109,4 +115,16 @@ span {
   transition: ease;
   font-size: 20px;
   font-weight: 500;
+}
+.footer {
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  .about-me {
+    width: 100%;
+  }
+  .contact {
+    width: 100%;
+  }
 }
