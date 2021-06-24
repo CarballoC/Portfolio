@@ -41,7 +41,7 @@ function init() {
   new typeWriter(txtElement, words, wait);
 }
 
-//
+//About-me transition
 function showAboutMeText() {
   const aboutMeText = document.querySelector(".about-me-text");
   const aboutMeTextPosition = aboutMeText.getBoundingClientRect().top;

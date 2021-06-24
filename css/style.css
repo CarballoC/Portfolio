@@ -47,6 +47,14 @@ ul {
   background-color: var(--background);
   width: 50%;
 }
+#mypic {
+  width: 80%;
+  opacity: 0.3;
+  transition: 0.7s all ease-in-out;
+}
+#mypic:hover {
+  opacity: 1;
+}
 .about-me-text {
   opacity: 0;
   transform: translateY(20px);
