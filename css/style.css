@@ -1,10 +1,12 @@
 :root {
-  --dark: #010107;
+  --dark: #04040ef8;
   --light: #959899;
   --font: #8c898d;
   --orange: #f7bc70;
   --white: #c9c6c6;
   --background: #0a090e;
+  --black: #000;
+  --blue: #02083d91;
 }
 #logo {
   position: relative;
@@ -60,11 +62,11 @@ ul {
   transform: translateY(20px);
   transition: 1s all ease-in-out;
 }
+
 .about-me-transition {
   opacity: 1;
   transform: translateY(0px);
 }
-
 #projects {
   background-color: var(--dark);
   margin: 50px auto 200px;
@@ -80,7 +82,7 @@ ul {
   transform: translateY(-7px);
 }
 #projects a:hover {
-  color: var(--orange) !important;
+  color: var(--blue) !important;
 }
 i {
   font-size: 20px;
@@ -88,7 +90,7 @@ i {
 i:hover {
   transform: scaleY(0.7);
   transition: 0.4s ease;
-  color: var(--orange);
+  color: var(--blue);
 }
 .contact {
   background-color: var(--background);
