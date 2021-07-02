@@ -45,7 +45,7 @@ function init() {
 function showAboutMeText() {
   const aboutMeText = document.querySelector(".about-me-text");
   const aboutMeTextPosition = aboutMeText.getBoundingClientRect().top;
-  const screenPosition = window.innerHeight / 2;
+  const screenPosition = window.innerHeight / 1.5;
   if (aboutMeTextPosition < screenPosition) {
     aboutMeText.classList.add("about-me-transition");
   }

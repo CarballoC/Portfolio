@@ -10,6 +10,7 @@
   --red:#dc3545;
   --green:#20c997;
   --purple:#6f42c1;
+  --grey: #363a41;
 }
 body {
   box-sizing: border-box; 
@@ -61,7 +62,7 @@ p{
   opacity: 0.3;
   transition: 0.7s all ease-in-out;
   width: 70%; 
-  border-radius: 5px;
+  border-radius: 5px;  
 }
 #mypic:hover {
   opacity: 1;
@@ -83,8 +84,8 @@ p{
   transform: translateY(0px);
 }
 .txt{
-  font-size: 40px;
-  color: var(--red);
+  font-size: 25px;
+  color: var(--white);
 }
 .technology{
   margin-top:100px !important;
@@ -135,26 +136,26 @@ p{
   color: var(--red);
 }
 .contact {
-  background-color: var(--light);  
+  background-color: var(--grey);  
   width: 50%;  
   border-radius: 10px;
   box-shadow: 1px 1px 15px var(--black);
 }
 .contact h1, p{
-  color: var(--black)!important;  
+  color: var(--light)!important;  
 }
 
 .contact input,
 .contact textarea {
-  background-color: var(--light);
+  background-color: var(--grey);
   border-radius: 0;
   border: 0;
   width: 100%;
-  border-bottom: 1px solid var(--black);
+  border-bottom: 1px solid var(--light);
 }
 .btn-submit {
-  background-color: var(--black);
-  color: var(--white);  
+  background-color: var(--light);
+  color: var(--grey);  
   width: 100%;
 }
 .btn-submit:hover {
