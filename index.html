@@ -1,4 +1,4 @@
-git <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -53,67 +53,69 @@ git <!DOCTYPE html>
     </nav>
     <div class="container-fluid hero font p-5">
       <div class="row row-hero justify-content-center align-items-center">
-        <div class="col-md-6 mx-auto text-center">
-          <img
-            class="my-4"
-            id="logo"
-            src="img/yc green.svg"
-            alt="graphic pic"
-          />
-          <h1 class="mt-4">Yoandris Carballo,</h1>
+        <div class="col-md-12 text-center main-graphic">
+          <img src="img/hero_graphic.svg" alt="graphic about software"> 
+        </div>
+        <div class="col-md-6 mx-auto text-center">                 
+          <h1 class="mt-4 name">Yoandris Carballo,</h1>
           <h1 class="mb-4">Front End Developer</h1>
           <a href="#projects">
-            <button type="button" class="btn btn-outline-secondary my-4">
+            <button type="button" class="btn btn-primary my-4">
               View Projects
             </button></a
-          >
-          <h1 class="mt-3">
-            <span
-              class="txt-type"
-              data-wait="2000"
-              data-words='["Self-taught", "Hard Worker", "Passionate about Technology"]'
-            ></span
-            >_
-          </h1>
+          >                 
         </div>
-        <div class="text-center mb-5">
+        <div class="text-center mb-5">          
           <a href="#about-me">
-            <i class="fas fa-chevron-circle-down fa-1x"></i
-          ></a>
+           <img src="img/scrolldown.svg" alt=""></a>
         </div>
       </div>
-    </div>
-    <div class="container font about-me p-5" id="about-me">
+    </div>    
+    <div class="container about-me  p-5" id="about-me">   
       <div class="row justify-content-center align-items-center">
-        <div class="col-md-6 mx-auto text-center p-3">
-          <img id="mypic" src="img/Yoandris05.svg" alt="" />
-        </div>
-        <div class="col-md-6 about-me-text mx-auto p-3">
-          <h2 class="light-font">About me</h2>
-          <p>
+        <div class="col-md-3 text-center p-3"><img id="mypic" src="img/Yoandris.png" alt=""></div>
+        <div class="col-md-3 text-center p-3"> 
+          <h1 class="Typing">
+          <span
+            class="txt-type"
+            data-wait="2000"
+            data-words='["Self-taught", "Hard Worker", "Passionate about Technology"]'
+          ></span
+          >
+           </h1>
+          </div> 
+      </div>  
+      <div class="row justify-content-center about-me-text">   
+        <div class="col-md-6 p-3">        
+          <h1>About me</h1>          
+          <p class="text-start">
             I'm Yoandris Carballo self-taught Front End Dev, I discovered coding
             in 2020. I've become truly passionate about technology. Coding is
             what I enjoy most and I can't wait to have the opportunity to work
             with a team to improve my skills.
-          </p>
-          <h2 class="light-font">Technologies I've worked with</h2>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>GIT</li>
-            <li>XD</li>
-            <li>JS (ES06+) Currently Learning</li>
-            <li>REACT Currently Learning</li>
-          </ul>
-        </div>
+          </p>                    
+        </div>              
       </div>
     </div>
-    <div class="container p-3" id="projects">
+    <div class="container technology">
       <div class="row justify-content-center align-items-center">
-        <h1 class="light-font text-center p-5">What I've built</h1>
-        <div class="card-group">
+        <div class="col-md-12 text-center p-5">
+          <h1 class="p-5">Technology I've worked with</h1>
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-js-square"></i>
+          <i class="fab fa-git-square"></i>
+          <i class="fab fa-bootstrap"></i>
+          <i class="fab fa-react"></i>
+          <h3 class="p-5">(React Currently Learning)</h3>           
+        </div>        
+      </div>      
+    </div>
+    <div class="container p-3" id="projects">      
+      <div class="row justify-content-center align-items-center pt-2">
+        <h1 class="text-center p-5">What I've built</h1>        
           <div class="col-md-4 card text-start m-1 p-3">
-            <h5 class="card-title light-font">
+            <h5 class="card-title">
               <a href="https://truckerbud.com/" target="_blank"
                 >Truckerbud.com</a
               >
@@ -122,7 +124,7 @@ git <!DOCTYPE html>
               Website built to help those who are thinking of becoming in a
               truck driver.
             </p>
-            <ul class="light-font">
+            <ul>
               <li>HTML</li>
               <li>CSS</li>
               <li>Bootstrap</li>
@@ -141,7 +143,7 @@ git <!DOCTYPE html>
             </div>
           </div>
           <div class="col-md-4 card text-start m-1 p-3">
-            <h5 class="card-title light-font">
+            <h5 class="card-title">
               <a
                 href="https://carballoc.github.io/React-weather-app/"
                 target="_blank"
@@ -150,7 +152,7 @@ git <!DOCTYPE html>
             </h5>
             <p class="card-text font">React weather app.</p>
             <p class="card-text font"></p>
-            <ul class="light-font">
+            <ul>
               <li>HTML</li>
               <li>CSS</li>
               <li>Bootstrap</li>
@@ -171,14 +173,33 @@ git <!DOCTYPE html>
             </div>
           </div>
         </div>
-      </div>
+      <div class="row justify-content-center align-items-center pt-2">
+        <div class="col-md-4 card text-start m-1 p-3">
+          <h5 class="card-title">
+            <a href="https://github.com/CarballoC/Country_app" target="_blank">Country_app</a>
+          </h5>
+          <p class="card-text font">
+            Single Page Application. Main technology implemented: JavaScript. Check repository on GitHub.
+          </p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>JS</li>
+          </ul>
+          <div class="card-body">
+            <a href="https://github.com/CarballoC/Country_app" target="_blank"><i class="fas fa-external-link-alt p-2"></i></a>
+              <a href="https://github.com/CarballoC/Country_app" target="_blank" class="card-link"><i class="fab fa-github p-2"></i></a>
+          </div>
+        </div>
+      </div>     
     </div>
     <div class="container contact mb-3 p-5" id="contact-form">
       <div class="row justify-content-center align-items-center">
         <div class="col-md-8">
           <form action="POST" data-netlify="true">
             <div class="mb-3">
-              <h1 class="py-3 light-font">Get in Touch</h1>
+              <h1 class="py-3 font">Get in Touch</h1>
               <p class="font py-3">
                 I'm currently looking for opportunities. There is not small
                 opportunity for me. Get in touch even if you just want to know

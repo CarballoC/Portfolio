@@ -17,7 +17,7 @@ class typeWriter {
     } else {
       this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
-    this.txtElement.innerHTML = `<span classs="txt">${this.txt}</span>`;
+    this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
     let typeSpeed = 400;
     if (this.isDeleting) {
       typeSpeed /= 3;

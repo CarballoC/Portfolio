@@ -1,127 +1,167 @@
-:root {
-  --dark: #04040ef8;
-  --light: #959899;
-  --font: #8c898d;
-  --orange: #f7bc70;
-  --white: #c9c6c6;
-  --background: #0a090e;
+:root { 
+  --light: #adb5bd;
+  --font: #000;
+  --yellow: #e7e770;
+  --white: #fff; 
   --black: #000;
-  --blue: #02083d91;
-}
-#logo {
-  position: relative;
+  --blue: #0d6efd;
+  --dark-blue: #022a66;
+  --light-blue: #0dcaf0;
+  --red:#dc3545;
+  --green:#20c997;
+  --purple:#6f42c1;
 }
 body {
-  box-sizing: border-box;
-  background-color: var(--dark);
+  box-sizing: border-box; 
 }
 a {
-  text-decoration: none;
-  color: var(--font) !important;
+  text-decoration: none;  
 }
-
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+p{
+  font-size:20px;
+}
+.navbar a{
+  color: var(--white) !important;
+}
 .background-navbar {
-  background-color: var(--dark) !important;
+  background-color: var(--blue) !important;
 }
 .font {
   color: var(--font);
 }
-.light-font {
-  color: var(--light);
-}
-.orange-font {
-  color: var(--orange);
-}
-.hero {
-  background-color: var(--dark);
+.hero {  
   height: 100vh;
-  padding: auto;
+  padding: auto;  
+}
+.hero h1{
+  font-weight: 700; 
+  font-size: 40px;
 }
 .row-hero {
   height: 100%;
 }
+.name{
+  margin-top: 50px;
+}
+.main-graphic img{
+  width: 20%;
+}
 .about-me {
-  background-color: var(--background);
-  width: 50%;
+  background-color: var(--dark-blue);  
+  color: var(--white);    
 }
 #mypic {
-  width: 80%;
+  margin: auto;
+  padding: auto;
   opacity: 0.3;
   transition: 0.7s all ease-in-out;
+  width: 70%; 
+  border-radius: 5px;
 }
 #mypic:hover {
   opacity: 1;
+}
+.about-me{
+  border-radius: 10px;
+  box-shadow: 1px 8px 15px var(--black);  
+}
+.about-me p{
+  color: var(--white)!important;
 }
 .about-me-text {
   opacity: 0;
   transform: translateY(20px);
   transition: 1s all ease-in-out;
 }
-
 .about-me-transition {
   opacity: 1;
   transform: translateY(0px);
 }
-#projects {
-  background-color: var(--dark);
+.txt{
+  font-size: 40px;
+  color: var(--red);
+}
+.technology{
+  margin-top:100px !important;
+}
+.technology i{
+  font-size: 80px;
+  box-shadow: 1px 2px 15px var(--dark-blue);
+  background-color: var(--red);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px;
+  color: var(--light);
+
+}
+#projects {  
   margin: 50px auto 200px;
 }
-.card-group {
-  padding: 0 !important;
+#projects h1{
+  color: var(--blue);
+  font-weight: 800;  
 }
 .card {
   transition: 0.3s ease-in-out;
+  background:linear-gradient(to right top, var(--white), (var(--red)));
+  box-shadow: 1px 1px 15px var(--black);  
 }
-
-.card:hover {
-  transform: translateY(-7px);
-}
-#projects a:hover {
-  color: var(--blue) !important;
-}
-i {
-  font-size: 20px;
-}
-i:hover {
-  transform: scaleY(0.7);
-  transition: 0.4s ease;
-  color: var(--blue);
-}
-.contact {
-  background-color: var(--background);
-  color: var(--white);
-  width: 50%;
-}
-
-.contact input,
-.contact textarea {
-  background-color: var(--dark);
-  border: 0;
-  width: 100%;
-}
-.btn-submit {
-  background-color: var(--dark);
-  color: var(--light);
-  border: var(--light);
-  width: 100%;
-}
-.btn-submit:hover {
-  background-color: var(--font);
-}
-.card {
-  background-color: var(--background);
-  color: var(--white);
+.card a{
+  font-size: 30px!important;
 }
 .card-group {
   width: 70%;
 }
-span {
-  /* display: block; */
+.card:hover {
+  transform: translateY(-7px);
+}
+#projects a:hover {
+  color: var(--green) !important;
+  font-weight: 700;
+  /* transition: 0.7s ease-in-out; */
+}
+#projects i{
+  font-size: 30px;
+  color:var(--red); 
+}
+#projects i:hover {
+  transform: scaleY(0.7);
+  transition: 0.4s ease;
+  color: var(--red);
+}
+.contact {
+  background-color: var(--light);  
+  width: 50%;  
+  border-radius: 10px;
+  box-shadow: 1px 1px 15px var(--black);
+}
+.contact h1, p{
+  color: var(--black)!important;  
+}
+
+.contact input,
+.contact textarea {
+  background-color: var(--light);
+  border-radius: 0;
+  border: 0;
+  width: 100%;
+  border-bottom: 1px solid var(--black);
+}
+.btn-submit {
+  background-color: var(--black);
+  color: var(--white);  
+  width: 100%;
+}
+.btn-submit:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+span {  
   transition: ease;
   font-size: 20px;
   font-weight: 500;
@@ -136,5 +176,18 @@ span {
   }
   .contact {
     width: 100%;
+  }
+  .main-graphic img{
+    width: 60%;
+  }
+  .hero h1{
+    font-weight: 700; 
+    font-size: 25px;
+  }
+
+}
+@media (max-width: 320px) {  
+  .main-graphic img{
+    width: 80%;
   }
 }
