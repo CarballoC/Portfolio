@@ -1,11 +1,12 @@
 :root { 
-  --light: #adb5bd;
-  --font: #000;
+  --light: #adb5bd50;
+  /* --font: #000; */
   --yellow: #e7e770;
+  --orange: #fd3a18;
   --white: #fff; 
   --black: #000;
   --blue: #0d6efd;
-  --dark-blue: #022a66;
+  --dark-blue: #0d1b2e;
   --light-blue: #0dcaf0;
   --red:#dc3545;
   --green:#20c997;
@@ -30,31 +31,47 @@ p{
   color: var(--white) !important;
 }
 .background-navbar {
-  background-color: var(--blue) !important;
+  background-color: var(--dark-blue) !important;
 }
-.font {
-  color: var(--font);
+.hero .row{
+  height: 100%;
 }
 .hero {  
-  height: 100vh;
-  padding: auto;  
+  height: 100vh;  
+  background-image: url(/img/technology-785742_1920.jpg);   
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;   
 }
 .hero h1{
   font-weight: 700; 
-  font-size: 40px;
+  font-size: 50px;
+  color: var(--white);
+  text-shadow: 2px 2px 1px var(--black);   
 }
-.row-hero {
-  height: 100%;
+.hero i{
+  font-size: 30px;
+  color: var(--white);
+  margin-top: 0;
+  background-color: var(--light);
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid var(--white);
 }
-.name{
-  margin-top: 50px;
-}
-.main-graphic img{
-  width: 20%;
+.hero .btn{
+  background-color: var(--light);
+  border: 2px solid var(--white);
+  border-radius: 30px;
+  box-shadow: 1px 1px 6px var(--black);
+  font-weight: 600;
+  padding: 10px 20px;
+  color: var(--white);
+
 }
 .about-me {
   background-color: var(--dark-blue);  
-  color: var(--white);    
+  color: var(--white); 
+  margin: 200px auto ;   
 }
 #mypic {
   margin: auto;
@@ -89,6 +106,7 @@ p{
 }
 .technology{
   margin-top:100px !important;
+  background-color: var(--light);
 }
 .technology i{
   font-size: 80px;
@@ -105,18 +123,25 @@ p{
 }
 #projects h1{
   color: var(--blue);
-  font-weight: 800;  
+  font-weight: 800;   
 }
 .card {
   transition: 0.3s ease-in-out;
-  background:linear-gradient(to right top, var(--white), (var(--red)));
-  box-shadow: 1px 1px 15px var(--black);  
+  background-color: var(--white);
+  box-shadow: 1px 2px 15px var(--black);  
+  border: 0;
+  border-radius: 15px;
+}
+.card-title{
+  background-color: var(--grey)!important; 
+  border-radius: 10px;  
+}
+.card li{
+  font-weight: 700;
+  color: var(--blue);  
 }
 .card a{
   font-size: 30px!important;
-}
-.card-group {
-  width: 70%;
 }
 .card:hover {
   transform: translateY(-7px);
@@ -128,7 +153,7 @@ p{
 }
 #projects i{
   font-size: 30px;
-  color:var(--red); 
+  color:var(--dark-blue); 
 }
 #projects i:hover {
   transform: scaleY(0.7);
@@ -171,24 +196,29 @@ span {
   width: 40%;
 }
 
-@media (max-width: 768px) {
-  .about-me {
-    width: 100%;
+@media (max-width: 1024px) {
+  .hero h1{
+    font-size:40px;
+  }
+}
+@media (max-width: 960px) {
+  .hero h1{
+  font-size: 35px;
+  }
+  .hero .btn{
+    padding: 5px 10px;
+
+  }
+  .hero i{
+    font-size: 20px;
   }
   .contact {
     width: 100%;
-  }
-  .main-graphic img{
-    width: 60%;
-  }
-  .hero h1{
-    font-weight: 700; 
-    font-size: 25px;
-  }
-
+  } 
 }
-@media (max-width: 320px) {  
-  .main-graphic img{
-    width: 80%;
-  }
+@media (max-width: 320px) {
+ .hero h1{
+  font-size:30px;  
+ }
+  
 }
