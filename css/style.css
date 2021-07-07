@@ -1,6 +1,7 @@
 :root { 
   --light: #adb5bd50;
-  /* --font: #000; */
+  --font:#000;
+  --light-grey: #e8ebec;  
   --yellow: #e7e770;
   --orange: #fd3a18;
   --white: #fff; 
@@ -10,11 +11,11 @@
   --light-blue: #0dcaf0;
   --red:#dc3545;
   --green:#20c997;
-  --purple:#6f42c1;
+  --purple:#6a38c7;
   --grey: #363a41;
 }
 body {
-  box-sizing: border-box; 
+  box-sizing: border-box;   
 }
 a {
   text-decoration: none;  
@@ -37,17 +38,18 @@ p{
   height: 100%;
 }
 .hero {  
-  height: 100vh;  
+  height: 95vh;  
   background-image: url(/img/technology-785742_1920.jpg);   
   background-position:center;
   background-repeat: no-repeat;
   background-size: cover;   
+  border-bottom: 20px solid var(--dark-blue);
 }
 .hero h1{
   font-weight: 700; 
   font-size: 50px;
   color: var(--white);
-  text-shadow: 2px 2px 1px var(--black);   
+  text-shadow: 2px 2px 1px var(--black);     
 }
 .hero i{
   font-size: 30px;
@@ -66,47 +68,45 @@ p{
   font-weight: 600;
   padding: 10px 20px;
   color: var(--white);
-
 }
-.about-me {
-  background-color: var(--dark-blue);  
-  color: var(--white); 
-  margin: 200px auto ;   
+#about-me {     
+  width: 60%; 
+  border-radius: 5px;
+  box-shadow: 2px 2px 15px var(--light-grey);
+  margin: 100px auto;   
 }
-#mypic {
-  margin: auto;
-  padding: auto;
-  opacity: 0.3;
+#about-me h1{
+  font-weight: 500;
+  font-size: 40px;
+  background-color: transparent;
+  color: var(--purple); 
+  
+}
+#mypic{  
+  opacity: 0.7;
   transition: 0.7s all ease-in-out;
-  width: 70%; 
-  border-radius: 5px;  
+  width: 60%;  
+  padding: 5px; 
+  background: linear-gradient(to right, var(--blue), var(--purple)); 
 }
 #mypic:hover {
   opacity: 1;
 }
-.about-me{
-  border-radius: 10px;
-  box-shadow: 1px 8px 15px var(--black);  
+.about-me-text {    
+  color: var(--black)!important;  
+  padding-left: 40px;
+  width: 100%;
+  margin: 10px;  
+  border-left: 3px solid var(--purple);
+  color: var(--black)!important; 
+  font-weight: 500;
+  margin: 100px auto;   
 }
-.about-me p{
-  color: var(--white)!important;
-}
-.about-me-text {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: 1s all ease-in-out;
-}
-.about-me-transition {
-  opacity: 1;
-  transform: translateY(0px);
-}
-.txt{
-  font-size: 25px;
-  color: var(--white);
-}
+
 .technology{
   margin-top:100px !important;
-  background-color: var(--light);
+  background-color: var(--grey);
+  color: var(--white);
 }
 .technology i{
   font-size: 80px;
@@ -115,7 +115,7 @@ p{
   padding: 10px;
   border-radius: 5px;
   margin: 20px;
-  color: var(--light);
+  color: var(--white);
 
 }
 #projects {  
