@@ -72,7 +72,7 @@ p{
 #about-me {     
   width: 60%; 
   border-radius: 5px;
-  box-shadow: 2px 2px 15px var(--light-grey);
+  
   margin: 100px auto;   
 }
 #about-me h1{
@@ -102,7 +102,6 @@ p{
   font-weight: 500;
   margin: 100px auto;   
 }
-
 .technology{
   margin-top:100px !important;
   background-color: var(--grey);
@@ -200,6 +199,20 @@ span {
   .hero h1{
     font-size:40px;
   }
+  #about-me{
+    display: block;
+    width: 80%;    
+  }
+  #about-me h1{
+    font-size: 30px;
+  }
+  #mypic{
+    width: 50%;
+  }
+  .about-me-text{
+    margin: 10px;
+    border-left: 0;
+  }
 }
 @media (max-width: 960px) {
   .hero h1{
@@ -220,5 +233,8 @@ span {
  .hero h1{
   font-size:30px;  
  }
+ #mypic{
+  width: 80%;
+}
   
 }
