@@ -1,9 +1,8 @@
 :root { 
   --light: #adb5bd50;
   --font:#000;
-  --light-grey: #e8ebec;  
-  --yellow: #e7e770;
-  --orange: #fd3a18;
+  --light-grey: #e8ebec;
+  --orange: #f32400;
   --white: #fff; 
   --black: #000;
   --blue: #0d6efd;
@@ -12,7 +11,7 @@
   --red:#dc3545;
   --green:#20c997;
   --purple:#6a38c7;
-  --grey: #363a41;
+  --grey: #1e1f20;
 }
 body {
   box-sizing: border-box;   
@@ -52,9 +51,9 @@ p{
   text-shadow: 2px 2px 1px var(--black);     
 }
 .hero i{
-  font-size: 30px;
+  font-size: 20px;
   color: var(--white);
-  margin-top: 0;
+  margin-top:20px;
   background-color: var(--light);
   padding: 10px 20px;
   border-radius: 20px;
@@ -102,6 +101,14 @@ p{
   font-weight: 500;
   margin: 100px auto;   
 }
+.technology h1{
+  color: var(--light-grey);
+  border-bottom: 2px solid var(--light-grey);
+}
+.technology h3{
+  color: var(--light-grey);
+  border-top: 2px solid var(--light-grey);
+}
 .technology{
   margin-top:100px !important;
   background-color: var(--grey);
@@ -110,44 +117,48 @@ p{
 .technology i{
   font-size: 80px;
   box-shadow: 1px 2px 15px var(--dark-blue);
-  background-color: var(--red);
+  background-color: var(--purple);
   padding: 10px;
   border-radius: 5px;
   margin: 20px;
-  color: var(--white);
+  color: var(--light-grey);
 
 }
 #projects {  
-  margin: 50px auto 200px;
+  margin: 100px auto;
 }
 #projects h1{
-  color: var(--blue);
+  color: var(--purple);
   font-weight: 800;   
 }
 .card {
   transition: 0.3s ease-in-out;
   background-color: var(--white);
-  box-shadow: 1px 2px 15px var(--black);  
+  box-shadow: 1px 1px 6px var(--black);  
   border: 0;
-  border-radius: 15px;
+  border-radius: 5px;
+  margin: 10px 0;
 }
 .card-title{
-  background-color: var(--grey)!important; 
-  border-radius: 10px;  
+  color: var(--purple);  
 }
-.card li{
-  font-weight: 700;
-  color: var(--blue);  
+.card-text{
+  color: var(--black)!important;
 }
 .card a{
-  font-size: 30px!important;
+  font-size: 15px!important;
+  border-radius: 20px;
+  background-color: var(--purple); 
+  border: 0;
+  font-weight: 500;
+  box-shadow: 1px 1px 4px var(--black);
+
 }
 .card:hover {
   transform: translateY(-7px);
 }
-#projects a:hover {
-  color: var(--green) !important;
-  font-weight: 700;
+#projects a:hover { 
+  color: var(--light-grey)!important;
   /* transition: 0.7s ease-in-out; */
 }
 #projects i{
@@ -204,7 +215,7 @@ span {
     width: 80%;    
   }
   #about-me h1{
-    font-size: 30px;
+    font-size: 35px;
   }
   #mypic{
     width: 50%;
@@ -212,6 +223,7 @@ span {
   .about-me-text{
     margin: 10px;
     border-left: 0;
+    padding:10px;
   }
 }
 @media (max-width: 960px) {
@@ -228,6 +240,10 @@ span {
   .contact {
     width: 100%;
   } 
+  .about-me-text{
+    margin: 5px;    
+    padding:0;
+  }
 }
 @media (max-width: 320px) {
  .hero h1{
@@ -235,6 +251,15 @@ span {
  }
  #mypic{
   width: 80%;
+}
+.technology h1{
+  font-size: 20px;
+}
+.technology h3{
+  font-size: 15px;
+}
+.technology i{
+  font-size: 60px;
 }
   
 }
