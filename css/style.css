@@ -108,8 +108,7 @@ p{
 .technology{
   margin-top:100px !important;
   background-color: var(--grey);
-  color: var(--white);
-  height: 40vh;
+  color: var(--white);  
 }
 .technology i{
   font-size: 60px;
