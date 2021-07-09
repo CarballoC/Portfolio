@@ -19,21 +19,24 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>YC Portfolio</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark background-navbar">
-      <div class="container-fluid">
+  <body>       
+    <div class="top top-bar">
+      
+    </div>
+     <nav class="navbar navbar-expand-lg navbar-dark background-navbar">
+      <div class="container">
         <a class="navbar-brand nav-font" href="#">YC</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
           <span class="navbar-toggler-icon"></span>
-        </button>
+          </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -47,25 +50,21 @@
                 >Resume</a
               >
             </li>
+            <li class="nav-item">
+              <a class="nav-link nav-font" href="#projects" 
+                >Projects</a
+              >
+            </li>
           </ul>
         </div>
       </div>
-    </nav>
-    <div class="container-fluid hero p-5">
+    </nav>    
+  <div class="container-fluid hero p-5">
       <div class="row row-hero justify-content-center align-items-center">        
-        <div class="col-md-6 mx-auto text-center">                 
+        <div class="col-md-6 mx-auto text-center">                     
           <h1 class="">Yoandris Carballo,</h1>
-          <h1 class="mb-5">Front End Developer</h1>
-          <a href="#about-me">
-            <button type="button" class="btn btn-dark btn-lg">
-              ScrollDown
-            </button></a
-          >                 
-          <a href="#projects">
-            <button type="button" class="btn btn-dark btn-lg">
-              View Projects
-            </button></a
-          >                 
+          <h1 class="mb-5">Front End Developer</h1>          
+          <a href="#about-me"><i class="fas fa-angle-double-down"></i></i></a>                
         </div>       
       </div>
     </div>    
@@ -81,30 +80,34 @@
         </div>        
         <div class="col-lg-4 mx-auto">                  
           <p class="about-me-text font">
-            I'm self-taught Front End Developer. I've become truly passionate about technology. I'm eager to learn new things.
+            I'm a self-taught Front End Developer. I've become truly passionate about technology. Coding is what I enjoy most.
           </p>                    
         </div>        
         <div class="col-lg-4 mx-auto">                  
           <p class="about-me-text font">
-            Coding is what I enjoy most and I'm looking for the opportunity to work with a team to improve my skills.
+            I'm eager to learn new things and I'm looking for the opportunity to work with a team to improve my skills.
           </p>                    
         </div>        
       </div>        
     </div>
-    <div class="container-fluid technology p-5">
+    <div class="container-fluid technology py-5">
       <div class="row justify-content-center align-items-center">
-        <div class="col-sm-8 text-center">
-          <h1 class="">What I've worked with</h1>
-          <h3 class="">JS and React Currently Learning</h3>           
+        <div class="col-md-12 text-center">
+          <h1 class="my-3">What I've worked with</h1>
+          <h3 class="my-3">JS and React Currently Learning</h3>           
         </div>
-          <div class="col-md-8 text-center">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-js-square"></i> 
-            <i class="fab fa-git-square"></i>
-            <i class="fab fa-bootstrap"></i>
-            <i class="fab fa-react"></i>               
-          </div>                
+        <div class="col-sm-2 text-center">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+        </div>        
+        <div class="col-sm-2 text-center">
+          <i class="fab fa-js-square"></i> 
+          <i class="fab fa-react"></i>                      
+        </div>       
+        <div class="col-sm-2 text-center">
+          <i class="fab fa-bootstrap"></i> 
+          <i class="fab fa-git-square"></i>                      
+        </div>                                                   
       </div>      
     </div>
     <div class="container p-3" id="projects">      
@@ -119,7 +122,7 @@
             <img src="/img/trucker.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Truckerbud.com</h5>
-              <p class="card-text">Website built to help those who are thinking of becoming in a
+              <p class="card-text">Website to those who are thinking of becoming in a
                 truck driver.</p>
               <p class="card-text">
                 HTML, CSS, Bootstrap, JS               
@@ -159,48 +162,52 @@
         </div>
       </div>          
     </div>
-    <div class="container contact mb-5 p-5" id="contact-form">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-md-8">
-          <form action="POST" data-netlify="true">
-            <div class="mb-3">
-              <h1 class="py-3 font">Get in Touch</h1>
-              <p class="py-3">
-                I'm open to opportunities.
-              </p>
-
-              <input
-                type="name"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Name"
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                name="email"
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="name@example.com"
-              />
-            </div>
-            <div class="mb-3">
-              <textarea
-                name="message"
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="3"
-                placeholder="Message"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-submit">Send</button>
-          </form>
+    <section class="contact-section">
+      <div class="container contact p-5" id="contact-form">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-8">
+            <form action="POST" data-netlify="true">
+              <div class="mb-3">
+                <h1 class="py-3 font">Get in Touch</h1>
+                <p class="py-3">
+                  I'm open to opportunities.
+                </p>
+  
+                <input
+                  type="name"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  name="email"
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  name="message"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-submit">Send</button>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+    
+    
     <div class="container-fluid footer p-5">
-      <div class="row justify-content-md-center align-items-center">
+      <div class="row justify-content-md-center">        
         <div class="col-md-12 text-center">
           <p>YoandrisCarballo.com</p>
           <a href="https://github.com/CarballoC" target="_blank"
