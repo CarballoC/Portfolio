@@ -11,10 +11,11 @@
   --blue:	#00529c; 
   --light-blue:#2169a0; 
   --lighter:#3383c0; 
+  
 }
 body {
   box-sizing: border-box;  
-  font-family:'Montserrat', sans-serif!important; 
+  font-family:'Montserrat', sans-serif!important;  
 }
 .code-icon{
   font-size: 30px !important;
@@ -101,13 +102,11 @@ p{
 }
 .technology{
   margin:0px auto !important;
-  background-color: var(--smoke);
+  background-color: var(--light-blue);
   color: var(--white); 
-  height: 50vh; 
-
 }
 .technology h1{
-  color: var(--black);
+  color: var(--white);
   font-weight: 900;
 }
 .technology h3{
@@ -186,52 +185,52 @@ p{
   padding: 5px;
 }
 .contact {
-  background-color: var(--smoke);  
+  background-color: var(--light-blue);  
   width: 70%;  
   border-radius: 5px;
   box-shadow: 1px 1px 5px var(--light-grey);
   margin: 100px auto;
 }
 .contact ::placeholder{
-  color: var(--dark-blue); 
+  color: var(--white); 
 }
 .contact h1, p{
-  color: var(--dark-blue)!important;
+  color: var(--white)!important;
   font-weight: 900;  
 }
 .contact input,
 .contact textarea {
-  background-color: var(--smoke);
+  background-color: var(--light-blue);
   border-radius: 0;
   border: 0;
   width: 100%;
-  border-bottom: 1px solid var(--dark-blue);
+  border-bottom: 1px solid var(--white);
 }
 .btn-submit {
   background-color: var(--dark-blue);
   color: var(--white);    
-  font-weight:700;
+  font-weight:500;
 }
 .btn-submit:hover {
-  background-color: var(--light-blue);
-  color: var(--black);
+  background-color: var(--orange);
+  color: var(--white);
 }
 span {  
   transition: ease;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
 }
 .footer {  
-  background-color: var(--grey); 
+  background-color: var(--black); 
   border-top: 1px solid var(--light-grey);
 }
 .footer p{
-  color: var(--black)!important;
+  color: var(--white)!important;
 }
 .footer i{
   font-size: 30px;
   margin: 10px;
-  color: var(--black);
+  color: var(--white);
 }
 @media (max-width: 1024px) {
   .hero h1{
