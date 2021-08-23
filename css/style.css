@@ -40,8 +40,7 @@ p{
   color: var(--white) !important;
 }
 .background-navbar {
-  background-color: var(--dark-blue) !important;
-  /* box-shadow: 0px 3px 6px var(--black); */
+  background-color: var(--dark-blue) !important;  
 }
 .hero .row{
   height: 100%;
@@ -50,20 +49,18 @@ p{
   height: 90vh;  
   background-color: var(--light-blue);
 }
-.hero h1{
-  font-weight: 700; 
-  font-size: 50px;
-  color: var(--white);
-  text-shadow: 2px 2px 1px var(--black);     
+.hero h1{  
+  font-weight: 800; 
+  font-size: 55px;
+  color: var(--white);  
 }
 .hero i{
   font-size: 20px;
   color: var(--white);
-  margin-top:20px;
+  margin-top:10px;
   background-color: var(--orange);
   padding: 10px 30px;
-  border-radius: 30px;
-  /* border: 2px solid var(--white); */
+  border-radius: 30px;  
 }
 .hero .btn{
   background-color: var(--purple);  
@@ -72,11 +69,11 @@ p{
   padding: 10px;
   color: var(--white);
 }
-#mypic{   
-  transition: 0.7s all ease-in-out;
+#mypic{  
   width: 50%;  
-  padding: 5px; 
-  background: linear-gradient(to right, var(--light-blue), var(--dark-blue)); 
+  padding: 10px;  
+  border: 10px solid var(--dark-blue);
+  border-radius: 10px;
 }
 
 #about-me {     
