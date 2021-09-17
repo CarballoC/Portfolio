@@ -1,26 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 :root {   
   --orange:#f37021;  
+  --light-orange:#e7cbb8;  
   --grey: #55556b;
   --light-grey: #c0c0c0;  
   --smoke: #f8f7f7;  
   --white: #fff; 
   --black: #000;  
-  --dark-blue: #092555;    
-  --font:#000; 
-  --blue:	#00529c; 
-  --light-blue:#2169a0; 
-  --lighter:#3383c0; 
-  
+  --dark-blue: #243249;    
+  --font:#000;   
+  --light-blue:#647d91;   
 }
 body {
   box-sizing: border-box;  
-  font-family:'Montserrat', sans-serif!important;  
-}
-.code-icon{
-  font-size: 30px !important;
-  background-color: var(--light-purple);
-  border: 0!important;
+  font-family: 'Source Sans Pro', sans-serif!important;  
 }
 a {
   text-decoration: none;  
@@ -46,11 +39,12 @@ p{
   height: 100%;
 }
 .hero {  
-  height: 90vh;  
-  background-color: var(--light-blue);
+  /* height: 60vh;   */
+  background-color: var(--dark-blue);
+  margin: auto;  
 }
 .hero h1{  
-  font-weight: 800; 
+  font-weight: 700; 
   font-size: 55px;
   color: var(--white);  
 }
@@ -70,7 +64,7 @@ p{
   color: var(--white);
 }
 #mypic{  
-  width: 50%;  
+  width: 40%;  
   padding: 10px;  
   border: 10px solid var(--dark-blue);
   border-radius: 10px;
@@ -82,29 +76,29 @@ p{
   margin: 100px auto;   
 }
 #about-me h1{
-  font-weight: 900;
+  font-weight: 700;
   font-size: 40px;
   background-color: transparent;
-  color: var(--purple);   
+  color: var(--orange);   
 }
 .about-me-text {    
   color: var(--black)!important;  
   padding-left: 40px;
   width: 100%;
   margin: 10px;  
-  border-left: 3px solid var(--blue);
+  border-left: 3px solid var(--orange);
   color: var(--black)!important; 
   font-weight: 500;
   margin: 100px auto;   
 }
 .technology{
   margin:0px auto !important;
-  background-color: var(--light-blue);
+  background-color: var(--grey);
   color: var(--white); 
 }
 .technology h1{
   color: var(--white);
-  font-weight: 900;
+  font-weight: 700;
 }
 .technology h3{
   color: var(--black);  
@@ -119,31 +113,31 @@ p{
   color: var(--white);
 }
 #projects {  
-  margin: 100px auto 50px;
+  margin: 100px auto;
 }
 #projects h1{
   color: var(--blue);
-  font-weight: 900;
-   
+  font-weight: 700;   
 }
 .card {
   transition: 0.3s ease-in-out;
-  background-color: var(--white);  
+  background-color: var(--grey);  
   box-shadow: 1px 1px 10px var(--light-grey);
   border-radius: 5px;
-  margin: 10px 0;
+  margin: 20px auto;
   border: 0;  
 }
 .card img{
-  width: 100%!important;  
+  width: 100%!important;
+  border: 10px solid var(--orange);
 }
 .card-title{
-  color: var(--white);  
-  font-weight: 500;
-  background-color: var(--blue);
+  color: var(--black);  
+  font-weight: 500; 
   padding: 10px; 
   margin-top: 0px !important;
-  margin:auto -16px;  
+  margin:auto -16px; 
+  border-bottom: 1px solid var(--orange); 
 }
 .card-body{
   padding-top: 0;
@@ -158,7 +152,7 @@ p{
 .card a{
   font-size: 15px!important;
   border-radius: 3px;
-  background-color:var(--blue);
+  background-color:var(--orange);
   border: 0;
   font-weight: 500;
   margin: 5px;
@@ -182,7 +176,7 @@ p{
   padding: 5px;
 }
 .contact {
-  background-color: var(--light-blue);  
+  background-color: var(--grey);  
   width: 70%;  
   border-radius: 5px;
   box-shadow: 1px 1px 5px var(--light-grey);
@@ -193,18 +187,18 @@ p{
 }
 .contact h1, p{
   color: var(--white)!important;
-  font-weight: 900;  
+  font-weight: 700;  
 }
 .contact input,
 .contact textarea {
-  background-color: var(--light-blue);
+  background-color: var(--grey);
   border-radius: 0;
   border: 0;
   width: 100%;
   border-bottom: 1px solid var(--white);
 }
 .btn-submit {
-  background-color: var(--dark-blue);
+  background-color: var(--orange);
   color: var(--white);    
   font-weight:500;
 }
@@ -218,16 +212,15 @@ span {
   font-weight: 400;
 }
 .footer {  
-  background-color: var(--black); 
-  border-top: 1px solid var(--light-grey);
+  background-color: var(--dark-blue);   
 }
 .footer p{
-  color: var(--white)!important;
+  color: var(--light-grey)!important;
 }
 .footer i{
   font-size: 30px;
   margin: 10px;
-  color: var(--white);
+  color: var(--light-grey);  
 }
 @media (max-width: 1024px) {
   .hero h1{
@@ -266,6 +259,9 @@ span {
   .about-me-text{
     margin: 5px;    
     padding:0;
+  }
+  #mypic{
+    display: none;
   }
 }
 @media (max-width: 320px) {
