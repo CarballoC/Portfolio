@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 :root {   
-  --orange:#f37021;  
+  --orange:#d15454;  
+  --red:#fd2b2b;  
   --light-orange:#e7cbb8;  
-  --grey: #55556b;
-  --light-grey: #c0c0c0;  
+  --grey: #464242;
+  --light-grey: #e2e0e0;  
   --smoke: #f8f7f7;  
   --white: #fff; 
   --black: #000;  
-  --dark-blue: #243249;    
+  --dark-blue: #151c29;    
   --font:#000;   
   --light-blue:#647d91;   
 }
@@ -35,16 +36,19 @@ p{
 .background-navbar {
   background-color: var(--dark-blue) !important;  
 }
+.span{
+  color: var(--red)!important;
+}
 .hero .row{
   height: 100%;
 }
-.hero {  
-  /* height: 60vh;   */
+.hero {   
   background-color: var(--dark-blue);
-  margin: auto;  
+  margin: auto;
+  height: 60vh;  
 }
 .hero h1{  
-  font-weight: 700; 
+  font-weight: 600; 
   font-size: 55px;
   color: var(--white);  
 }
@@ -52,9 +56,9 @@ p{
   font-size: 20px;
   color: var(--white);
   margin-top:10px;
-  background-color: var(--orange);
+  background-color: var(--red);
   padding: 10px 30px;
-  border-radius: 30px;  
+  border-radius: 5px;  
 }
 .hero .btn{
   background-color: var(--purple);  
@@ -63,57 +67,57 @@ p{
   padding: 10px;
   color: var(--white);
 }
+.btn-project{
+  background-color: var(--red)!important;
+  width: 150px;  
+}
+.btn-contact{
+  border: 2px solid var(--red)!important;
+  color: var(--red)!important;
+  width: 150px;
+}
 #mypic{  
-  width: 40%;  
-  padding: 10px;  
-  border: 10px solid var(--dark-blue);
-  border-radius: 10px;
+  width: 40%; 
+  border-radius: 20px;
+  box-shadow: -20px 20px 0px var(--red);
 }
-
-#about-me {     
-  width: 80%; 
-  border-radius: 5px;  
-  margin: 100px auto;   
+h2{
+  color: var(--dark-blue);
+  font-weight: bold;
+  background-color: var(--red);
+  padding: 5px;
 }
-#about-me h1{
-  font-weight: 700;
-  font-size: 40px;
-  background-color: transparent;
-  color: var(--orange);   
+.about-me-paragraph{
+  background-color: var(--light-grey);
+  padding: 150px 100px;
+  color: var(--white);
 }
 .about-me-text {    
-  color: var(--black)!important;  
-  padding-left: 40px;
-  width: 100%;
-  margin: 10px;  
-  border-left: 3px solid var(--orange);
-  color: var(--black)!important; 
-  font-weight: 500;
-  margin: 100px auto;   
+  color: var(--dark-blue)!important;
 }
 .technology{
   margin:0px auto !important;
-  background-color: var(--grey);
+  background-color: var(--light-blue);
   color: var(--white); 
 }
 .technology h1{
-  color: var(--white);
+  color: var(--light-grey);
   font-weight: 700;
 }
 .technology h3{
   color: var(--black);  
 }
 .technology i{
-  font-size: 60px;
-  box-shadow: 1px 2px 10px var(--grey);
-  background-color:var(--orange);
+  font-size: 80px;  
+  background-color:var(--light-blue);
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 20px;
-  color: var(--white);
+  color: var(--light-grey);
 }
 #projects {  
   margin: 100px auto;
+  /* background-color: var(--light-grey); */
 }
 #projects h1{
   color: var(--blue);
@@ -121,41 +125,40 @@ p{
 }
 .card {
   transition: 0.3s ease-in-out;
-  background-color: var(--grey);  
-  box-shadow: 1px 1px 10px var(--light-grey);
-  border-radius: 5px;
+  background-color: var(--light-blue)!important;  
+  box-shadow: 10px 10px 30px var(--grey);
+  border-radius: 20px;
   margin: 20px auto;
   border: 0;  
 }
 .card img{
-  width: 100%!important;
-  border: 10px solid var(--orange);
+  width: 100%!important;  
 }
 .card-title{
-  color: var(--black);  
-  font-weight: 500; 
+  color: var(--red);  
+  font-weight: bold; 
   padding: 10px; 
   margin-top: 0px !important;
   margin:auto -16px; 
-  border-bottom: 1px solid var(--orange); 
+  border-bottom: 1px solid var(--light-grey); 
 }
 .card-body{
   padding-top: 0;
-  background-color: var(--white);    
-  font-weight: 400;
+  background-color: var(--dark-blue);      
 }
 .card-text{
-  color: var(--black)!important;
+  color: var(--white)!important;
   margin-top: 10px;
   font-weight: 400;  
 }
 .card a{
   font-size: 15px!important;
   border-radius: 3px;
-  background-color:var(--orange);
+  background-color:var(--red);
   border: 0;
   font-weight: 500;
   margin: 5px;
+  color: var(--white);
 }
 .card:hover {
   transform: translateY(-7px);
@@ -176,10 +179,10 @@ p{
   padding: 5px;
 }
 .contact {
-  background-color: var(--grey);  
+  background-color: var(--light-blue);  
   width: 70%;  
   border-radius: 5px;
-  box-shadow: 1px 1px 5px var(--light-grey);
+  /* box-shadow: 5px 5px 10px var(--grey); */
   margin: 100px auto;
 }
 .contact ::placeholder{
@@ -191,15 +194,15 @@ p{
 }
 .contact input,
 .contact textarea {
-  background-color: var(--grey);
+  background-color: var(--light-blue);
   border-radius: 0;
   border: 0;
   width: 100%;
   border-bottom: 1px solid var(--white);
 }
 .btn-submit {
-  background-color: var(--orange);
-  color: var(--white);    
+  background-color: var(--light-grey);
+  color: var(--black);    
   font-weight:500;
 }
 .btn-submit:hover {

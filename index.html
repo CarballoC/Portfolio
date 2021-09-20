@@ -23,7 +23,7 @@
    
      <nav class="navbar navbar-expand-lg navbar-dark background-navbar">
       <div class="container">
-        <a class="navbar-brand nav-font" href="#">YC</a>
+        <a class="navbar-brand nav-font" href="#"><span class="span">YC</span></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -39,20 +39,12 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link nav-font" href="#about-me">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-font" href="#contact-form">Contact</a>
-            </li>
+            </li>            
             <li class="nav-item">
               <a class="nav-link nav-font" href="/Resume1.0.pdf" target="_blank"
                 >Resume</a
               >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-font" href="#projects" 
-                >Projects</a
-              >
-            </li>
+            </li>            
           </ul>
         </div>
       </div>
@@ -61,29 +53,25 @@
       <div class="row justify-content-center align-items-center">        
         <div class="col-md-5 p-5">                     
           <h1 class="">Yoandris Carballo,</h1>
-          <h1 class="mb-5">Front End Developer</h1>          
-          <a href="#about-me"><i class="fas fa-angle-double-down"></i></i></a>                
+          <h1 class="mb-5">Front End Developer</h1>
+          <a href="#projects"><button class="btn btn-project">Project</button> </a>
+          <a href="#contact-form"><button class="btn btn-contact">Contact</button></a>                                          
         </div> 
         <div class="col-md-4 text-center">         
-          <img id="mypic" src="img/portfolio.jpg">
         </div>       
       </div>
     </div>    
-    <div class="container" id="about-me">       
-      <div class="row justify-content-center align-items-center"> 
-        <div class="col-lg-4">
-          <h1>Who Am I?</h1>
+    <div class="container-fluid" id="about-me">       
+      <div class="row justify-content-center align-items-center">        
+        <div class="col-md-5 text-center">                
+          <img id="mypic" src="img/portfolio.jpg">  
         </div>                
-        <div class="col-lg-4 mx-auto">                  
-          <p class="about-me-text font">
-            I'm a self-taught Front End Developer. I've become truly passionate about technology. Coding is what I enjoy most.
-          </p>                    
-        </div>        
-        <div class="col-lg-4 mx-auto">                  
-          <p class="about-me-text font">
-            I'm eager to learn new things and I'm looking for the opportunity to work with a team to improve my skills.
-          </p>                    
-        </div>        
+        <div class="col-md-5 about-me-paragraph">  
+          <h2 class="">Who Am I?</h2>                                  
+          <p class="about-me-text">            
+            I'm a self-taught Front End Developer. I've become truly passionate about technology. Coding is what I enjoy most. I'm eager to learn new things and I'm looking for the opportunity to work with a team to improve my skills.
+          </p>                             
+        </div>               
       </div>        
     </div>
     <div class="container-fluid technology py-5">
@@ -91,23 +79,19 @@
         <div class="col-md-12 text-center p-3">
           <h1 class="my-3">What I've worked with</h1>                   
         </div>
-        <div class="col-sm-2 text-center">
+        <div class="col-sm-12 text-center py-5">
           <i class="fab fa-html5"></i> 
-          <i class="fab fa-css3-alt"></i>            
-        </div>   
-        <div class="col-sm-2 text-center">
+          <i class="fab fa-css3-alt"></i>   
           <i class="fab fa-js-square"></i>       
-          <i class="fab fa-react"></i>             
-        </div>                 
-        <div class="col-sm-2 text-center">           
+          <i class="fab fa-react"></i>   
           <i class="fab fa-bootstrap"></i> 
-          <i class="fab fa-git-square"></i>                               
-        </div>      
-                                                        
+          <i class="fab fa-git-square"></i>        
+        </div>                                                          
       </div>      
     </div>
-    <div class="container p-3" id="projects">      
+    <div class="container p-5" id="projects">      
       <div class="row justify-content-center align-items-center">
+        <div class="col-md-11"><h2>What I have built</h2></div>
         <div class="col-md-4">
           <div class="card" style="width: 18rem;">
             <img src="/img/trucker.png" class="card-img-top" alt="...">
