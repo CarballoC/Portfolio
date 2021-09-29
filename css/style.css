@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-:root {   
-  --orange:#d15454;  
-  --red:#fd2b2b;  
-  --light-orange:#e7cbb8;  
-  --grey: #464242;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root {    
+  --blue:#3d5da1;    
+  --grey: #d4d3d3;
   --light-grey: #e2e0e0;  
   --smoke: #f8f7f7;  
-  --white: #fff; 
+  --white: #f3f1f1; 
   --black: #000;  
-  --dark-blue: #151c29;    
+  --dark-blue: #222f46;    
   --font:#000;   
   --light-blue:#647d91;   
 }
 body {
   box-sizing: border-box;  
-  font-family: 'Source Sans Pro', sans-serif!important;  
+  font-family: 'Open Sans', sans-serif!important; 
+  background-color: var(--grey); 
 }
 a {
   text-decoration: none;  
@@ -23,9 +22,6 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-p{
-  font-size:20px;
 }
 .navbar{
   margin: auto;
@@ -37,7 +33,7 @@ p{
   background-color: var(--dark-blue) !important;  
 }
 .span{
-  color: var(--red)!important;
+  color: var(--white)!important;  
 }
 .hero .row{
   height: 100%;
@@ -56,48 +52,51 @@ p{
   font-size: 20px;
   color: var(--white);
   margin-top:10px;
-  background-color: var(--red);
+  background-color: var(--blue);
   padding: 10px 30px;
   border-radius: 5px;  
 }
 .hero .btn{
-  background-color: var(--purple);  
+  background-color: var(--dark-blue);  
   border-radius: 5px;
   font-weight: 500;
   padding: 10px;
-  color: var(--white);
+  color: var(--white)!important;
 }
 .btn-project{
-  background-color: var(--red)!important;
-  width: 150px;  
+  background-color: var(--blue)!important;
+  width: 150px;
+  color: var(--white)!important;  
 }
 .btn-contact{
-  border: 2px solid var(--red)!important;
+  border: 2px solid var(--blue)!important;
   color: var(--red)!important;
   width: 150px;
 }
 #mypic{  
   width: 40%; 
-  border-radius: 20px;
-  box-shadow: -20px 20px 0px var(--red);
+  border-radius: 5px;
+  box-shadow: -20px 20px 0px var(--blue);
 }
 h2{
-  color: var(--dark-blue);
+  color: var(--white);
   font-weight: bold;
-  background-color: var(--red);
-  padding: 5px;
+  background-color: var(--blue);
+  padding: 10px 20px;
+
 }
 .about-me-paragraph{
-  background-color: var(--light-grey);
-  padding: 150px 100px;
+  background-color: var(--grey);
+  padding: 150px;
   color: var(--white);
+  margin: 10px;   
 }
 .about-me-text {    
-  color: var(--dark-blue)!important;
+  color: var(--black)!important;
 }
 .technology{
   margin:0px auto !important;
-  background-color: var(--light-blue);
+  background-color: var(--dark-blue);
   color: var(--white); 
 }
 .technology h1{
@@ -109,15 +108,14 @@ h2{
 }
 .technology i{
   font-size: 80px;  
-  background-color:var(--light-blue);
+  background-color:var(--dark-blue);
   padding: 10px;
   border-radius: 10px;
   margin: 20px;
-  color: var(--light-grey);
+  color: var(--light-blue);
 }
 #projects {  
-  margin: 100px auto;
-  /* background-color: var(--light-grey); */
+  margin: 100px auto;  
 }
 #projects h1{
   color: var(--blue);
@@ -126,8 +124,7 @@ h2{
 .card {
   transition: 0.3s ease-in-out;
   background-color: var(--light-blue)!important;  
-  box-shadow: 10px 10px 30px var(--grey);
-  border-radius: 20px;
+  box-shadow: 5px 5px 10px var(--black);  
   margin: 20px auto;
   border: 0;  
 }
@@ -135,7 +132,7 @@ h2{
   width: 100%!important;  
 }
 .card-title{
-  color: var(--red);  
+  color: var(--blue);  
   font-weight: bold; 
   padding: 10px; 
   margin-top: 0px !important;
@@ -154,7 +151,7 @@ h2{
 .card a{
   font-size: 15px!important;
   border-radius: 3px;
-  background-color:var(--red);
+  background-color:var(--blue);
   border: 0;
   font-weight: 500;
   margin: 5px;
@@ -179,7 +176,7 @@ h2{
   padding: 5px;
 }
 .contact {
-  background-color: var(--light-blue);  
+  background-color: var(--dark-blue);  
   width: 70%;  
   border-radius: 5px;
   /* box-shadow: 5px 5px 10px var(--grey); */
@@ -194,15 +191,15 @@ h2{
 }
 .contact input,
 .contact textarea {
-  background-color: var(--light-blue);
+  background-color: var(--dark-blue);
   border-radius: 0;
   border: 0;
   width: 100%;
   border-bottom: 1px solid var(--white);
 }
 .btn-submit {
-  background-color: var(--light-grey);
-  color: var(--black);    
+  background-color: var(--blue);
+  color: var(--white);    
   font-weight:500;
 }
 .btn-submit:hover {
@@ -243,6 +240,12 @@ span {
     margin: 10px;
     border-left: 0;
     padding:10px;
+  }
+  .about-me-paragraph{
+    padding: 50px;
+  }
+  .btn{
+    margin: 5px;
   }
 }
 @media (max-width: 960px) {
