@@ -41,6 +41,9 @@
               <a class="nav-link nav-font" href="#about-me">About me</a>
             </li>            
             <li class="nav-item">
+              <a class="nav-link nav-font" href="#contact-form">Contact</a>
+            </li>            
+            <li class="nav-item">
               <a class="nav-link nav-font" href="/Resume1.0.pdf" target="_blank"
                 >Resume</a
               >
@@ -51,31 +54,32 @@
     </nav>    
     <div class="container-fluid hero p-5">
       <div class="row justify-content-center align-items-center">        
-        <div class="col-md-4 p-3">                     
-          <h1 class="">Yoandris Carballo,</h1>
+        <div class="col-md-8 p-3 text-center">                     
+          <h1 class="">Yoandris Carballo</h1>
           <h1 class="mb-5">Front End Developer</h1>
-          <a href="#projects"><button class="btn btn-project">Project</button> </a>
-          <a href="#contact-form"><button class="btn btn-contact">Contact</button></a>                                          
-        </div> 
-        <div class="col-md-4 p-3 text-end">   
-          <img id="mypic" src="img/portfolio.jpg">              
-        </div>       
+          <a href="#projects"><button class="btn btn-project">Project</button> </a>                                                    
+        </div>              
       </div>
     </div>    
     <div class="container-fluid" id="about-me">       
-      <div class="row justify-content-center align-items-center">                       
-        <div class="col-md-8 about-me-paragraph">  
-          <h2 class="">Who Am I?</h2>                                  
-          <h5 class="about-me-text p-3">            
-            I'm a self-taught Front End Developer. I've become truly passionate about technology. Coding is what I enjoy most. I'm eager to learn new things and I'm looking for the opportunity to work with a team to improve my skills.
-          </h5>                             
+      <div class="row justify-content-center align-items-center">                               
+        <div class="col-md-6 p-3 about-me-text">           
+          <h2 class="">Who Am I?</h2> 
+          <img id="mypic" src="img/portfolio.jpg">  
+          <ul>
+            <li>Front End Developer</li>
+            <li>Truly passionate about technology</li>
+            <li>Coding is what I enjoy most</li>
+            <li>Eager to learn new things and I'm looking for the opportunity to work with a team to improve my skills</li>
+          </ul>
+                                       
         </div>               
       </div>        
     </div>
     <div class="container-fluid technology py-5">
       <div class="row justify-content-center align-items-center py-5">
-        <div class="col-md-12 text-center p-3">
-          <h1 class="my-3">What I've worked with</h1>                   
+        <div class="col-md-6 p-3">
+          <h2 class="my-3">What I've worked with</h2>                   
         </div>
         <div class="col-sm-12 text-center py-5">
           <i class="fab fa-html5"></i> 
@@ -87,9 +91,9 @@
         </div>                                                          
       </div>      
     </div>
-    <div class="container p-5" id="projects">      
+    <div class="container p-3" id="projects">      
       <div class="row justify-content-center align-items-center">
-        <div class="col-md-12"><h2>What I have built</h2></div>
+        <div class="col-md-10"><h2>What I have built</h2></div>
         <div class="col-md-4">
           <div class="card" style="width: 18rem;">
             <img src="/img/trucker.png" class="card-img-top" alt="...">
@@ -138,10 +142,7 @@
           <div class="col-md-8">
             <form action="POST" data-netlify="true">
               <div class="mb-3">
-                <h1 class="py-3 font">Get in Touch</h1>
-                <p class="py-3">
-                  I'm open to opportunities.
-                </p>
+                <h2 class="font my-5">Get in Touch</h2>            
   
                 <input
                   type="name"

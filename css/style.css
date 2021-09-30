@@ -1,51 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap')!important;
 :root {    
-  --blue:#3d5da1;    
-  --grey: #d4d3d3;
+  --blue:#04335a;    
+  --grey: #eeecec;
+  --dark-grey: #c7c3c3;
   --light-grey: #e2e0e0;  
   --smoke: #f8f7f7;  
-  --white: #f3f1f1; 
+  --white: #ffffff; 
   --black: #000;  
-  --dark-blue: #222f46;    
-  --font:#000;   
-  --light-blue:#647d91;   
+  --dark-blue: #f7f3f3;    
+  --font:#000; 
+  --orange:#f1821a;  
+     
 }
 body {
   box-sizing: border-box;  
   font-family: 'Open Sans', sans-serif!important; 
   background-color: var(--grey); 
+  line-height: 1.6rem!important;
+}
+h2{
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--black);
+  border-bottom: 4px solid var(--orange);
 }
 a {
   text-decoration: none;  
 }
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+ul {   
+  padding: 5px;
 }
 .navbar{
-  margin: auto;
+  margin:0px;  
 }
 .navbar a{
-  color: var(--white) !important;
+  color: var(--black) !important;
+  font-size: 20px;
 }
 .background-navbar {
-  background-color: var(--dark-blue) !important;  
+  background-color: var(--smoke) !important;  
 }
 .span{
-  color: var(--white)!important;  
+  color: var(--blue)!important; 
+  font-size: 30px; 
 }
 .hero .row{
   height: 100%;
 }
 .hero {   
-  background-color: var(--dark-blue);
+  background-color: var(--blue);
   margin: auto;
   height: 60vh;  
 }
 .hero h1{  
-  font-weight: 600; 
-  font-size: 55px;
+  font-weight: 700; 
+  font-size: 50px;
   color: var(--white);  
 }
 .hero i{
@@ -56,52 +65,35 @@ ul {
   padding: 10px 30px;
   border-radius: 5px;  
 }
-.hero .btn{
-  background-color: var(--dark-blue);  
-  border-radius: 5px;
-  font-weight: 500;
-  padding: 10px;
-  color: var(--white)!important;
-}
 .btn-project{
   background-color: var(--blue)!important;
   width: 150px;
-  color: var(--white)!important;  
-}
-.btn-contact{
-  border: 2px solid var(--blue)!important;
-  color: var(--red)!important;
-  width: 150px;
+  color: var(--orange)!important;  
+  box-shadow: 5px 5px 0px var(--orange);
+  border: 2px solid var(--orange);
 }
 #mypic{  
-  width: 40%; 
-  border-radius: 5px;
-  box-shadow: -20px 20px 0px var(--blue);
+  width: 30%; 
+  border-radius: 5px;  
+  margin-right: 200px;  
 }
-h2{
-  color: var(--white);
-  font-weight: bold;
-  background-color: var(--blue);
-  padding: 10px 20px;
-
+.span-who-am-i{
+  font-size: 40px;
+  font-weight: 600px; 
 }
-.about-me-paragraph{
-  background-color: var(--grey);
-  padding: 150px;
-  color: var(--white);
-  margin: 10px;   
+#about-me{
+  margin: 100px auto!important;
 }
 .about-me-text {    
   color: var(--black)!important;
+  background-color: var(--smoke);
+  padding: 30px!important; 
+  box-shadow: 5px 5px 80px var(--dark-grey);     
 }
 .technology{
   margin:0px auto !important;
   background-color: var(--dark-blue);
   color: var(--white); 
-}
-.technology h1{
-  color: var(--light-grey);
-  font-weight: 700;
 }
 .technology h3{
   color: var(--black);  
@@ -112,19 +104,17 @@ h2{
   padding: 10px;
   border-radius: 10px;
   margin: 20px;
-  color: var(--light-blue);
+  color: var(--blue);
+  /* border: 2px solid var(--blue); */
+  box-shadow: 5px 5px 20px var(--dark-grey);  
 }
 #projects {  
   margin: 100px auto;  
 }
-#projects h1{
-  color: var(--blue);
-  font-weight: 700;   
-}
 .card {
   transition: 0.3s ease-in-out;
   background-color: var(--light-blue)!important;  
-  box-shadow: 5px 5px 10px var(--black);  
+  box-shadow: 5px 5px 50px var(--dark-grey);  
   margin: 20px auto;
   border: 0;  
 }
@@ -144,7 +134,7 @@ h2{
   background-color: var(--dark-blue);      
 }
 .card-text{
-  color: var(--white)!important;
+  color: var(--black)!important;
   margin-top: 10px;
   font-weight: 400;  
 }
@@ -156,6 +146,7 @@ h2{
   font-weight: 500;
   margin: 5px;
   color: var(--white);
+  box-shadow: 5px 5px 0px var(--orange);
 }
 .card:hover {
   transform: translateY(-7px);
@@ -165,7 +156,7 @@ h2{
 }
 #projects i{
   font-size: 30px;
-  color:var(--dark-blue);
+  color:var(--dark-blue);  
 }
 #projects i:hover {
   transform: scaleY(0.7);
@@ -176,31 +167,32 @@ h2{
   padding: 5px;
 }
 .contact {
-  background-color: var(--dark-blue);  
+  background-color: var(--smoke);  
   width: 70%;  
   border-radius: 5px;
-  /* box-shadow: 5px 5px 10px var(--grey); */
+  box-shadow: 5px 5px 50px var(--dark-grey);
   margin: 100px auto;
 }
 .contact ::placeholder{
-  color: var(--white); 
+  color: var(--black); 
 }
-.contact h1, p{
-  color: var(--white)!important;
+.contact p{
+  color: var(--black)!important;
   font-weight: 700;  
 }
 .contact input,
 .contact textarea {
-  background-color: var(--dark-blue);
+  background-color: var(--smoke);
   border-radius: 0;
   border: 0;
   width: 100%;
-  border-bottom: 1px solid var(--white);
+  border-bottom: 1px solid var(--black);
 }
 .btn-submit {
   background-color: var(--blue);
   color: var(--white);    
   font-weight:500;
+  box-shadow: 5px 5px 0px var(--orange);
 }
 .btn-submit:hover {
   background-color: var(--orange);
@@ -212,15 +204,15 @@ span {
   font-weight: 400;
 }
 .footer {  
-  background-color: var(--dark-blue);   
+  background-color: var(--blue);   
 }
 .footer p{
-  color: var(--light-grey)!important;
+  color: var(--white)!important;
 }
 .footer i{
   font-size: 30px;
   margin: 10px;
-  color: var(--light-grey);  
+  color: var(--orange);  
 }
 @media (max-width: 1024px) {
   .hero h1{
