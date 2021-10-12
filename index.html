@@ -19,10 +19,10 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>YC Portfolio</title>
   </head>
-  <body>       
+  <body>      
    
      <nav class="navbar navbar-expand-lg navbar-dark background-navbar">
-      <div class="container">
+      <div class="container-fluid px-5">
         <a class="navbar-brand nav-font" href="#"><span class="span">YC</span></a>
           <button
             class="navbar-toggler"
@@ -36,7 +36,7 @@
           <span class="navbar-toggler-icon"></span>
           </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link nav-font" href="#about-me">About me</a>
             </li>            
@@ -52,97 +52,110 @@
         </div>
       </div>
     </nav>    
-    <div class="container-fluid hero p-5">
-      <div class="row justify-content-center align-items-center">        
-        <div class="col-md-8 p-3 text-center">                     
-          <h1 class="">Yoandris Carballo</h1>
-          <h1 class="mb-5">Front End Developer</h1>
-          <a href="#projects"><button class="btn btn-project">Project</button> </a>                                                    
-        </div>              
+    <section>
+      <div class="container-fluid hero p-5">
+        <div class="row justify-content-center align-items-center">              
+          <div class="col-sm-6 px-5">                     
+            <h1 class="">Yoan Carballo</h1>
+            <h1 class="">Developer</h1>
+            <h2>Truly passionate about technology</h2>
+            <h2>Coding is what I enjoy most</h2>            
+            <a href="#projects"><button class="btn btn-project my-3">Project</button> </a>                                                   
+          </div>
+          <div class="col-sm-6 px-5">                     
+            <img src="./img/undraw_progressive_app_m9ms.svg" alt="" class="hero-img">                                             
+          </div>
+                      
+        </div>
       </div>
-    </div>    
-    <div class="container-fluid" id="about-me">       
-      <div class="row justify-content-center align-items-center">                               
-        <div class="col-md-6 p-3 about-me-text">           
-          <h2 class="">Who Am I?</h2> 
-          <img id="mypic" src="img/portfolio.jpg">  
-          <ul>
-            <li class="list-about-me">Front End Developer</li>
-            <li class="list-about-me">Truly passionate about technology</li>
-            <li class="list-about-me">Coding is what I enjoy most</li>
-            <li class="list-about-me">Eager to learn new things and I'm looking for the opportunity to work with a team to improve my skills</li>
-          </ul>
-                                       
-        </div>               
-      </div>        
-    </div>
-    <div class="container-fluid technology py-5">
-      <div class="row justify-content-center align-items-center py-5">
-        <div class="col-md-6 p-3">
-          <h3 class="my-3">What I've worked with</h3>                   
-        </div>
-        <div class="col-sm-12 text-center py-5">
-          <i class="fab fa-html5"></i> 
-          <i class="fab fa-css3-alt"></i>   
-          <i class="fab fa-js-square"></i>       
-          <i class="fab fa-react"></i>   
-          <i class="fab fa-bootstrap"></i> 
-          <i class="fab fa-git-square"></i>        
-        </div>                                                          
-      </div>      
-    </div>
-    <div class="container p-3" id="projects">      
-      <div class="row justify-content-center align-items-center">
-        <div class="col-md-10"><h2>What I have built</h2></div>
-        <div class="col-md-4">
-          <div class="card" style="width: 18rem;">
-            <img src="/img/trucker.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Truckerbud.com</h5>
-              <p class="card-text">Website to those who are thinking of becoming in a truck driver.</p>
-              <p class="card-text">HTML, CSS, Bootstrap, JS </p>
-              <a href="https://truckerbud.com" target="_blank" class="btn btn-primary">Check it out</a>
-            <a href="https://github.com/CarballoC/TruckerBud-Final/tree/Files-to-upload"
-            target="_blank" class="btn btn-primary">GitHub</a>
+    </section> 
+    <section>
+      <div class="container-fluid technology py-5">
+       <div class="container">
+        <div class="row justify-content-center align-items-center py-5">
+          <div class="col-md-12">            
+            <h2 class="my-3 text-center">TECHNOLOGIES I'VE WORKED WITH</h2>
+            <h4 class="pb-5 text-center">I am eager to learn new technologies and grow as a developer. I am working on improving my skills on JavaScript and React. </h4>                             
+          </div>
+          <div class="col-sm-2 text-center icon">
+            <i class="fab fa-html5"></i>              
+          </div> 
+          <div class="col-sm-2 text-center icon">
+            <i class="fab fa-css3-alt"></i>              
+          </div> 
+          <div class="col-sm-2 text-center icon">
+            <i class="fab fa-js-square"></i>              
+          </div> 
+          <div class="col-sm-2 text-center icon">
+            <i class="fab fa-react"></i>             
+          </div> 
+          <div class="col-sm-2 text-center icon">
+            <i class="fab fa-bootstrap"></i>             
+          </div> 
+          <div class="col-sm-2 text-center icon">
+            <i class="fab fa-git-square"></i>             
+          </div>                                                                        
+        </div> 
+       </div>     
+      </div> 
+    </section>   
+    <section>
+      <div class="container-fluid" id="projects">      
+        <div class="row justify-content-center align-items-center">        
+          <h2 class="text-center p-5">PROJECTS I'VE WORKED ON</h2>    
+          <div class="col-lg-3 text-center">            
+            <div class="card" style="width:80%;">
+              <h5 class="card-title">Truckerbud.com</h5>            
+              <img src="/img/truck.svg" class="card-img-top" alt="...">
+              <div class="card-body">                
+                <p class="card-text">Website to those who are thinking of becoming in a truck driver.</p>
+                <p class="card-text">HTML, CSS, Bootstrap, JS </p>
+                <a href="https://truckerbud.com" target="_blank" class="btn btn-primary">Check it out</a>
+              <a href="https://github.com/CarballoC/TruckerBud-Final/tree/Files-to-upload"
+              target="_blank" class="btn btn-primary">GitHub</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card" style="width: 18rem;">
-            <img src="/img/Know.png" class="card-img-top" alt="...">
-            <div class="card-body">
+          <div class="col-lg-3 text-center">
+            <div class="card" style="width:80%;">
               <h5 class="card-title">Check the Weather</h5>
-              <p class="card-text">Single Page Application using React. Weather app.</p>
-              <p class="card-text">HTML, CSS, Boostrap, React</p>
-              <a href="https://carballoc.github.io/weather-react-app/"
-              target="_blank" class="btn btn-primary">Check it out</a>              
-              <a href="https://github.com/CarballoC/weather-react-app"
-              target="_blank"
-              class="btn btn-primary">GitHub</a> 
+              <img src="/img/cloud-sun.svg" class="card-img-top" alt="...">
+              <div class="card-body">                
+                <p class="card-text">Single Page Application using React. Weather application.</p>
+                <p class="card-text">HTML, CSS, Boostrap, React</p>
+                <a href="https://carballoc.github.io/weather-react-app/"
+                target="_blank" class="btn btn-primary">Check it out</a>              
+                <a href="https://github.com/CarballoC/weather-react-app"
+                target="_blank"
+                class="btn btn-primary">GitHub</a> 
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card" style="width: 18rem;">
-            <img src="/img/country.png" class="card-img-top" alt="...">
-            <div class="card-body">
+          <div class="col-lg-3 text-center">
+            <div class="card" style="width:80%;">
               <h5 class="card-title">Country_app</h5>
-              <p class="card-text">Single Page Application to find Countries and its information.</p>
-                <p class="card-text">HTML, CSS, Bootstrap, JS</p>
-                <a href="https://github.com/CarballoC/Country_app"
-                target="_blank"class="btn btn-primary">GitHub</a>  
+              <a href=""><i class="bi bi-geo-alt"></i></a>
+              <img src="./img/geo-alt.svg" class="card-img-top" alt="...">
+              <div class="card-body">                
+                <p class="card-text">Single Page Application to find Countries and its information.</p>
+                  <p class="card-text">HTML, CSS, Bootstrap, JS</p>
+                  <a href="https://github.com/CarballoC/Country_app"
+                  target="_blank"class="btn btn-primary">GitHub</a>  
+              </div>
             </div>
           </div>
-        </div>
-      </div>          
-    </div>
-    <section class="contact-section">
-      <div class="container-fluid contact p-5" id="contact-form">
+        </div>          
+      </div> 
+    </section>  
+      
+    <section class="contact-section p-2">
+      <div class="container-fluid contact py-5" id="contact-form">
         <div class="row justify-content-center align-items-center">
-          <div class="col-md-8">
+          <img src="./img/undraw_message_sent_1030.svg" alt="Mail-box" class="email-img">
+          <div class="col-lg-6">
             <form action="POST" data-netlify="true">
               <div class="mb-3">
-                <h2 class="font my-5">Get in Touch</h2>            
+                <h3 class="my-5">GET IN TOUCH</h3>           
   
                 <input
                   type="name"
@@ -171,25 +184,26 @@
               </div>
               <button type="submit" class="btn btn-submit">Send</button>
             </form>
-          </div>
-        </div>
+          </div>                   
+        </div>        
       </div>
     </section>   
     <div class="container-fluid footer p-5">
-      <div class="row justify-content-md-center">        
-        <div class="col-md-12 text-center">
-          <p>YoandrisCarballo.com</p>
+      <div class="row justify-content-center align-items-center">        
+        <div class="col-lg-4">
+          <p>YOANDRISCARBALLO.COM</p>
           <p>Arizona, US</p>
-          <p>&copy; 2021</p>
-          
+          <p>&copy; 2021</p>          
+        </div>
+        <div class="col-md-4">
           <a href="https://github.com/CarballoC" target="_blank"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://www.instagram.com/yoac2021/" target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="#"><i class="fas fa-arrow-circle-up"></i></a>
-        </div>        
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.instagram.com/yoac2021/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="#"><i class="fas fa-arrow-circle-up"></i></a>        
+        </div>
       </div>
     </div>
     <script

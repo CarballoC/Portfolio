@@ -1,20 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Kanit&display=swap');
 :root {    
   --blue:#0f3561;    
-  --light-blue:#8a93ac; 
+  --light-blue:#5c7edd; 
   --mediun-blue:#0665b3;    
-  --grey: #ecebeb;
+  --grey: #f5f5f5;
   --dark-grey: #c7c3c3;   
   --white: #ffffff; 
-  --black: #000;     
+  --black: #000;
+  --dark:#252525;     
+  --orange:#ff8c09;     
+  --red:#fd0d05;     
+  --green:#08a52a;     
 }
 body {
   box-sizing: border-box;  
-  font-family: 'Open Sans', sans-serif!important; 
+  font-family: 'Cabin', sans-serif;
   background-color: var(--white); 
   line-height: 1.6rem!important;
 }
-
 a {
   text-decoration: none;  
 }
@@ -22,118 +25,90 @@ ul {
   padding: 5px;
   list-style: none;
 }
-h2{
-  font-size: 30px;
-  font-weight: 600;
-  color: var(--mediun-blue);
-  border-bottom: 4px solid var(--mediun-blue);
-}
 .navbar{
   margin:0px;  
+  box-shadow: 1px 1px 50px var(--grey);
 }
 .navbar a{
-  color: var(--white) !important;
+  color: var(--black) !important;
   font-size: 20px;
 }
 .background-navbar {
-  background-color: var(--blue) !important;  
+  background-color: var(--white) !important;  
 }
 .span{
-  color: var(--white)!important; 
+  color: var(--black)!important; 
   font-size: 30px; 
 }
 .hero .row{
   height: 100%;
 }
 .hero {   
-  background-color: var(--blue);
+  background-color: var(--white);
   margin: auto;
   height: 60vh;   
 }
 .hero h1{  
-  font-weight: 700; 
-  font-size: 50px;
-  color: var(--white);  
+  font-weight: 900; 
+  font-size: 70px;
+  color: var(--orange);    
 }
+
 .btn-project{
   background-color: var(--light-blue)!important;
   width: 150px;
   color: var(--white)!important;  
   font-weight: 600;  
+  border-radius: 5px;
 }
-#mypic{  
-  width: 30%; 
-  border-radius: 5px;  
-  margin-right: 200px;
-  padding: 20px 0px;  
-}
-.span-who-am-i{
-  font-size: 40px;
-  font-weight: 600px; 
-}
-#about-me{
-  margin: 100px auto!important;
-}
-.about-me-text {    
-  color: var(--black)!important;
-  background-color: var(--white);
-  padding: 30px!important; 
-  box-shadow: 5px 5px 80px var(--dark-grey);     
-}
-.list-about-me:before{
-  content:"o";
-  color: var(--light-blue);
-  margin-right: 10px;
+.hero-img{
+  width: 80%;
 }
 .technology{
   margin:0px auto !important;
-  background-color: var(--mediun-blue);  
-  /* box-shadow: 5px 5px 10px var(--dark-grey); */
+  background-color: var(--grey);    
 }
-.technology, h3{
-  font-size: 30px;
-  font-weight: 600;
-  color: var(--white)!important;
-  border-bottom: 4px solid var(--white);
-  
+.technology h2{
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--black)!important;  
 }
-.technology h3{
-  color: var(--black);  
+.technology i{  
+  font-size: 100px;  
+  background-color:var(--grey);
+  padding: 10px;  
+  color: var(--green);
 }
-.technology i{
-  font-size: 80px;  
-  background-color:var(--white);
-  padding: 10px;
-  border-radius: 5px;
-  margin: 20px;
-  color: var(--mediun-blue);  
-}
+
 #projects {  
-  margin: 100px auto;  
+  padding: 50px 0px;
+  background-color: var(--white); 
+}
+#projects h2{
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--black)!important; 
+}
+.project-img{
+  width: 15%;
 }
 .card {
   transition: 0.3s ease-in-out;
   background-color: var(--white)!important;  
   box-shadow: 5px 5px 50px var(--dark-grey);  
-  margin: 20px auto;
-  border: 0;  
+  margin:auto;  
 }
 .card img{
-  width: 100%!important;
-  /* border-top: 10px solid var(--mediun-blue);  
-  border-bottom: 10px solid var(--mediun-blue);   */
+  width: 100%!important;  
 }
 .card-title{
-  color: var(--blue);  
-  font-weight: bold; 
-  padding: 10px; 
-  margin-top: 0px !important;
-  margin:auto -16px; 
-  border-bottom: 1px solid var(--light-grey); 
+  padding: 30PX;
+  font-weight: 700;
+  color: var(--orange)!important; 
 }
 .card-body{
   padding-top: 0;
-  background-color: var(--dark-blue);      
+  background-color: var(--dark-blue);    
 }
 .card-text{
   color: var(--black)!important;
@@ -143,7 +118,7 @@ h2{
 .card a{
   font-size: 15px!important;
   border-radius: 3px;
-  background-color:var(--mediun-blue);
+  background-color:var(--orange);
   border: 0;
   font-weight: 500;
   margin: 5px;
@@ -153,26 +128,26 @@ h2{
   transform: translateY(-7px);
 }
 #projects a:hover { 
-  background-color: var(--black)!important;  
+  background-color: var(--green)!important;  
 }
-#projects i{
-  font-size: 30px;
-  color:var(--dark-blue);  
-}
-#projects i:hover {
-  transform: scaleY(0.7);
-  transition: 0.4s ease;
-  color: var(--mediun-blue);
+.card-img-top{
+  height: 120px;
+  padding: 20px;  
 }
 .contact-section{  
   padding: 5px;
 }
 .contact {
   background-color: var(--white);  
-  width: 70%;  
+  width: 100%;  
   border-radius: 5px;
   box-shadow: 5px 5px 50px var(--dark-grey);
-  margin: 100px auto;
+  margin: 80px auto;
+}
+h3{
+  font-size: 35px;
+  font-weight: 700!important;
+  color: var(--green)!important;   
 }
 .contact ::placeholder{
   color: var(--black); 
@@ -190,7 +165,7 @@ h2{
   border-bottom: 1px solid var(--black);
 }
 .btn-submit {
-  background-color: var(--mediun-blue);
+  background-color: var(--green);
   color: var(--white);    
   font-weight:500;  
 }
@@ -203,8 +178,12 @@ span {
   font-size: 20px;
   font-weight: 400;
 }
+.email-img{
+  width: 30%;
+  padding: 50px;
+}
 .footer {  
-  background-color: var(--light-blue);   
+  background-color: var(--mediun-blue);   
 }
 .footer p{
   color: var(--white)!important;
@@ -214,74 +193,75 @@ span {
   margin: 10px;
   color: var(--white);  
 }
-@media (max-width: 1024px) {
+
+
+@media (max-width: 1440px) {
+  .hero h1{
+    font-size:50px;
+  } 
+  .technology h2{
+    font-size: 25px;
+  } 
+  .technology h4{
+    font-size: 15px;
+  }
+  .technology i{
+    font-size: 80px;
+  }
+  #projects h2{
+    font-size: 25px;
+  }
+
+
+}
+@media (max-width: 1200px) {
+  .hero h2{
+    font-size:20px;
+  }  
+  #projects h2{
+    font-size: 20px;
+  }
+}
+@media (max-width: 1134px) {
+
   .hero h1{
     font-size:40px;
   }
-  #about-me{
-    display: block;
-    width: 80%;    
-  }
-  #about-me h1{
-    font-size: 35px;
-  }
-  #mypic{
-    width: 50%;
-  }
-  .about-me-text{
-    margin: 10px;
-    border-left: 0;
-    padding:10px;
-  }
-  .about-me-paragraph{
-    padding: 50px;
-  }
-  .btn{
-    margin: 5px;
-  }
+  .hero h2{
+    font-size:20px;
+  }  
 }
-@media (max-width: 960px) {
-  .hero h1{
-  font-size: 35px;
-  }
-  .hero .btn{
-    padding: 5px 10px;
-
-  }
-  .hero i{
-    font-size: 20px;
-  }
-  .contact {
-    width: 100%;
+@media (max-width: 1024px) {
+  .btn-project{
+    width: 100px;
   } 
-  .about-me-text{
-    margin: 5px;    
-    padding:0;
-  }
-  #mypic{
+  .contact-section img{
     display: none;
   }
 }
-@media (max-width: 320px) {
-  .technology .col{
-    margin: auto;
+@media (max-width: 900px) {
+  .hero h1{
+    font-size:35px;
   }
+  .hero h2{
+    font-size:15px;
+  } 
+  .btn-project{
+    width: 70px;
+  } 
 }
-@media (max-width: 320px) {
- .hero h1{
-  font-size:30px;  
- }
- #mypic{
-  width: 80%;
-}
-.technology h1{
-  font-size: 20px;
-}
-.technology h3{
-  font-size: 15px;
-}
-.technology i{
-  font-size: 60px;
-}
-  
+@media (max-width: 768px) {
+  .hero h1{
+    font-size:35px;
+  }
+  .hero h2{
+    font-size:15px;
+  } 
+  .btn-project{
+    width: 70px;
+  } 
+  .hero-img{
+   display: 40%;
+  }
+
 }
