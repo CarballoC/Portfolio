@@ -238,6 +238,10 @@ span {
   .contact-section img{
     display: none;
   }
+  .navbar a{
+    color: var(--black) !important;
+    font-size: 15px;
+  }
 }
 @media (max-width: 900px) {
   .hero h1{
