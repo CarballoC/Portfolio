@@ -19,7 +19,7 @@ body {
   line-height: 1.6rem!important;
 }
 a {
-  text-decoration: none;  
+  text-decoration: none; 
 }
 ul {   
   padding: 5px;
@@ -28,13 +28,15 @@ ul {
 .navbar{
   margin:0px;  
   box-shadow: 1px 1px 50px var(--grey);
+ 
 }
+
 .navbar a{
-  color: var(--black) !important;
+  color: var(--green) !important;
   font-size: 20px;
 }
 .background-navbar {
-  background-color: var(--white) !important;  
+  background-color: var(--grey) !important;  
 }
 .span{
   color: var(--black)!important; 
